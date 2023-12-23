@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.weatherSectionContainer {
+    color: white;
+}
+
+@media screen and (width >=390px) {
+    .weatherSectionContainer {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .6rem;
+        background-image: url("./weather_bg.png");
+    }
+
+    .weatherSectionContainer>img {
+        position: absolute;
+        z-index: -1;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .weatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .currentWeatherInfoWrapper {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .currentWeatherInfoWrapper>img {
+        height: 5.9rem;
+    }
+
+    .weatherLocationIcon {
+        font-size: .8rem;
+    }
+
+    .weatherTemperature,
+    .currentDayInfoWrapper,
+    .currentWeatherStatsWrapper {
+        color: white;
+    }
+
+    .weatherTemperature {
+        font-size: 1.75rem;
+    }
+
+    .currentDayInfoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .4rem;
+        font-size: 1.2rem;
+    }
+
+    .dateWrapper {
+        font-weight: lighter;
+    }
+
+    .locationWrapper {
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+        padding-right: 0.2rem;
+    }
+
+    .currentWeatherStatsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .4rem;
+        border: .1rem solid white;
+        padding: .4rem;
+        padding-right: 3rem;
+        border-radius: .5rem;
+        font-size: .8rem;
+    }
+
+    .subWeatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nextDayWeatherWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .nextDayWeatherWrapper>img {
+        height: 3rem;
+    }
+
+    .nextDayWeatherTemperature,
+    .nextDayName {
+        color: white;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .weatherSectionContainer {
+        background-image: url("./weather_bg.png");
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .currentWeatherInfoWrapper>img {
+        height: 2.9rem;
+    }
+
+    .weatherTemperature {
+        font-size: 1.15rem;
+    }
+
+    .currentDayInfoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .4rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .dateWrapper {
+        font-weight: lighter;
+        font-size: .8rem;
+    }
+
+    .locationWrapper {
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+        padding-right: 0.2rem;
+    }
+
+    .weatherLocationIcon {
+        font-size: .7rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .weatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .85rem;
+    }
+
+    .currentWeatherStatsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .2rem;
+        border: .1rem solid white;
+        padding: .4rem;
+        padding-right: 2rem;
+        border-radius: .5rem;
+        font-size: .5rem;
+    }
+
+    .subWeatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nextDayWeatherWrapper>img {
+        height: 1.6rem;
+    }
+
+    .nextDayWeatherTemperature,
+    .nextDayName {
+        color: white;
+        font-size: .7rem;
+        text-transform: uppercase;
+    }
+}
+
+@media (width >=1024px) {
+    .weatherSectionContainer {
+        background-image: url("./weather_bg.png");
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .currentWeatherInfoWrapper>img {
+        height: 4.9rem;
+    }
+
+    .weatherTemperature {
+        font-size: 2.15rem;
+    }
+
+    .currentDayInfoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .4rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .dateWrapper {
+        font-weight: lighter;
+    }
+
+    .locationWrapper {
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+        padding-right: 0.2rem;
+    }
+
+    .weatherLocationIcon {
+        font-size: 1rem;
+        padding-bottom: 0.15rem;
+    }
+
+    .weatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .currentWeatherStatsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .15rem;
+        border: .1rem solid white;
+        padding: .4rem;
+        padding-right: 2rem;
+        border-radius: .5rem;
+        font-size: .8rem;
+    }
+
+    .subWeatherSectionWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nextDayWeatherWrapper>img {
+        height: 2.6rem;
+    }
+
+    .nextDayWeatherTemperature,
+    .nextDayName {
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}

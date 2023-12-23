@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+* {
+    font-family: 'League Gothic', sans-serif;
+}
+
+.loginContainer {
+    padding: 6rem;
+}
+
+.loginProfileContainer {
+    position: relative;
+}
+
+.loginProfileWrapper {
+    position: absolute;
+    top: -8rem;
+    left: -4.245rem;
+}
+
+.loginProfileWrapper>img {
+    height: 8rem;
+    border: .3rem #000000 solid;
+    border-radius: 50%;
+}
+
+.loginProfileImageEditIcon {
+    position: absolute;
+    top: 6rem;
+    left: 6.3rem;
+    background-color: #DD1600;
+    color: white;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+    border: none;
+}
+
+.loginProfileImageEditIcon:hover {
+    color: #DD1600;
+    background-color: white;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 14rem;
+}
+
+.loginContentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 24rem;
+    min-width: 16rem;
+    background-color: #20292F;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 4%;
+}
+
+.Login_CustomLabel {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: medium;
+}
+
+.Login_CustomInput {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: .01rem white solid;
+    font-size: 1.3rem;
+}
+
+.loginUsernameWrapper,
+.loginGmailWrapper,
+.loginGenderWrapper,
+.loginDateWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.loginInformationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loginButtonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.editProfileWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: .2rem;
+    padding-right: 1.2rem;
+}
+
+.spaceBetweenClass {
+    padding: .5rem;
+}
+
+#editProfileButton {
+    border: none;
+    background-color: #000000;
+    color: white;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+#editProfileButton:hover {
+    background-color: #0000003e;
+}
+
+.loginEditProfileIcon {
+    font-size: 1rem;
+    color: white;
+}
+
+#loginButton {
+    border: none;
+    background-color: #DD1600;
+    color: white;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+#loginButton:hover {
+    background-color: #dd16008f;
+    color: white;
+}
